@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pixelArt/pixelArt.css">
+    <title>PixelArt</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pixelArt__container">
+            <div class="game">
+                <div class="playingField">
+                    <div class="gridField">
+                        <div class="grid1"></div>
+                        <div class="grid2"></div>
+                        <div class="grid3"></div>
+                        <div class="grid4"></div>
+                    </div>
+                </div>
+                <div class="settings">
+                    <div class="colorChange">
+                        <input class="colorButton" type="color" value="#e66465">
+                        <div class="colorText">Pick a color</div>
+                    </div>
+                    <div class="resetField">Reset</div>
+                    <div class="gridSize">
+                        <input type="range" min="2" max="40" value="2" class="inputGridSize">
+                        <div class="size">Grid Size <span class="gridValue">2 X 2</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/pixelArt/pixelArt.js"></script>
+</body>
+</html>

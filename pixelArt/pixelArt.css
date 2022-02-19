@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none}
+
+nav, footer, header, aside {display: block;}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+
+
+
+[class*="__container"] {
+    max-width: 1400px;
+    margin: 0px auto;
+    height: 100%;
+}
+.wrapper{
+    background-color: #faf7f4;
+    height: 100%;
+}
+.game{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 160px;
+}
+.colorChange{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+.colorText{
+    margin-right: 40px;
+    font-size: large;
+}
+.resetField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #efefef;
+    font-size: large;
+}
+.inputGridSize{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.gridSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.size{
+    font-size: 17px;
+}
+
+
+.playingField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.gridField{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.gridField>div{
+    border: 0.5px solid black;
+    height: 17px;
+    width: 17px;
+}
+
